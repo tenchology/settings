@@ -1,0 +1,84 @@
+{
+    "general": {
+        "icon": "heroicon-o-cog-6-tooth",
+        "elements": [
+            {
+                "type": "input",
+                "key": "app_name",
+                "title": "App Name"
+            },
+            {
+                "key": "app_color",
+                "type": "color",
+                "title": "Global Color?",
+                "help": "Global color for the app Example: #ff0000"
+            },
+            {
+                "key": "app_font",
+                "type": "input",
+                "title": "Primary font name",
+                "help": "Select a font for your titles <a target=\"_blank\" href=\"https://fonts.bunny.net\">bunny fonts</a>",
+                "placeholder": "Poppins"
+            },
+            {
+                "key": "body_font",
+                "type": "input",
+                "title": "Content font name",
+                "help": "Select a font for your titles <a target=\"_blank\" href=\"https://fonts.bunny.net\">bunny fonts</a>",
+                "placeholder": "IBM Plex Serif"
+
+            },
+            {
+                "type": "upload",
+                "key": "app_logo",
+                "title": "Logo",
+                "width": 350,
+                "height": 150
+            },
+            {
+                "type": "upload",
+                "key": "favicon",
+                "title": "Favicon",
+                "width": 350,
+                "height": 150
+            },
+            {
+                "type": "select",
+                "key": "default_currency",
+                "title": "Default Currency",
+                "class": "Tenchology\\Core\\Models\\Currency",
+                "keyCol": "symbol",
+                "valueCol": "name"
+
+            }
+        ]
+    },
+    "theme": {
+        "icon": "heroicon-o-swatch",
+        "elements": [
+            {
+                "type": "select",
+                "key": "app_theme",
+                "title": "Default Theme",
+                "options": {
+                    "default": "default",
+                    "one": "one"
+                }
+            }
+        ]
+    },
+    "payments": {
+        "icon": "heroicon-o-cog-6-tooth",
+        "elements": [
+            {
+                "type": "toggleButtons",
+                "key": "paypal_enabled",
+                "title": "Default Theme",
+                "options": {
+                    "1": "True",
+                    "0": "False"
+                }
+            }
+        ]
+    }
+}

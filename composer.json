@@ -1,0 +1,29 @@
+{
+    "name": "tenchology/settings",
+    "description": "",
+    "type": "library",
+    "version": "1.0",
+    "license": "proprietary",
+    "require": {
+        "filament/filament": "^3.0.0",
+        "filament/spatie-laravel-settings-plugin": "^3.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Tenchology\\Setting\\": "src/",
+            "Tenchology\\Setting\\Database\\Factories\\": "database/factories/",
+            "Tenchology\\Setting\\Database\\Seeders\\": "database/seeders/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tenchology\\Setting\\SettingsServiceProvider"
+            ]
+        }
+    }
+}
