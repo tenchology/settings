@@ -102,7 +102,7 @@ class Setting extends Page
                 return $this->types_match($element);
             });
             return [
-                $key => Tabs\Tab::make(__(Str::title($key)))->schema($types)->icon($value['icon']),
+                $key => Tabs\Tab::make(__(Str::title($key)))->schema($types)->icon($value['icon'] ?? 'heroicon-o-cog-6-tooth'),
             ];
         });
 
