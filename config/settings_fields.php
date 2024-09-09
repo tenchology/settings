@@ -198,6 +198,11 @@ return [
                 "type" => "editor",
                 "key" => "privacy_policy",
                 "title" => "Privacy Policy"
+            ],
+            [
+                "type" => "tagsInput",
+                "key" => "tour_amenities",
+                "title" => "Amenities"
             ]
         ]
     ],
