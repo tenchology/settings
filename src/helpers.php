@@ -1,7 +1,6 @@
 <?php
 
 
-use App\Settings\General;
 use Tenchology\Setting\Setting;
 
 if (!function_exists('setting')) {
@@ -16,13 +15,4 @@ if (!function_exists('setting')) {
 
     }
 
-}
-function generalSetting(string $key, $default = null)
-{
-    try {
-        return app(General::class)->$key ?? $default;
-    } catch (\Illuminate\Database\QueryException $e) {
-        Log::error($e);
-        return $default;
-    }
 }
